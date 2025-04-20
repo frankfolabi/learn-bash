@@ -11,12 +11,16 @@ This bash script customizes the terminal to display DevOps and Inspirational tip
 ## Instruction
 
 To install this on your terminal, run the following commands.
+
 `git clone https://github.com/frankfolabi/learn-bash.git` 
 
 Move to the inspire terminal directory
+
 `cd learn-bash/inspire-terminal`
 
 Execute the script
+
 `bash setup.sh`
 
 You can now enjoy your terminal with DevOps tips and quotes.
+---
