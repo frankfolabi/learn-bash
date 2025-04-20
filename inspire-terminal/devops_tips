@@ -1,0 +1,99 @@
+Run `docker system prune` to free up disk space safely.
+Use `kubectl get all --all-namespaces` to see everything in your cluster.
+`git log --oneline --graph --all` shows a cool commit tree.
+`docker system df` shows how much space your Docker images, containers, and volumes are using.
+Use multi-stage builds in Dockerfiles to keep your final images small.
+`docker-compose down -v` removes containers **and** volumes.
+Add `.dockerignore` to speed up Docker builds and avoid sending unnecessary files.
+Use `kubectl get events --sort-by=.metadata.creationTimestamp` to debug recent events.
+Use namespaces to isolate environments (e.g., `dev`, `staging`, `prod`).
+`kubectl explain <resource>` helps understand resource structure.
+Combine `kubectl get pods -o wide` with `kubectl describe` to troubleshoot.
+Don’t forget to set resource requests/limits in production!
+Use `terraform plan -out=tfplan` then `terraform apply tfplan` for safer changes.
+`terraform taint` forces a specific resource to be recreated.
+`terraform state list` shows all managed resources.
+Always run `terraform fmt` before committing code.
+Use workspaces to manage multiple environments (e.g., `terraform workspace new staging`).
+Use `git stash -u` to stash changes including untracked files.
+`git reflog` can save your butt after a bad reset or rebase.
+Add aliases in `.gitconfig`, like `co = checkout`, `br = branch`.
+`git cherry-pick` lets you copy a commit from one branch to another.
+Always lint and test before deploying—automate it!
+Use GitHub Actions/Workflows to auto-build, test, and deploy.
+Store secrets in environments or secret managers, never in code.
+Define infra as code with Terraform, Pulumi, or CloudFormation for repeatability.
+Use tools like Prometheus + Grafana for metrics and dashboards.
+Use `journalctl -u <service>` to see logs for a systemd service.
+Centralize logs with Fluentd, Logstash, or AWS CloudWatch Logs.
+Watch for container memory leaks and OOMKills (`kubectl describe pod` shows them).
+Use `docker system prune` regularly to clean up unused containers, images, and networks.
+Use `watch -n 1 kubectl get pods` to monitor Kubernetes pod status live.
+Always version your Terraform modules and lock provider versions for reproducibility.
+Use `git rebase -i HEAD~n` to clean up commit history before merging a feature branch.
+Store secrets securely using AWS Secrets Manager or HashiCorp Vault instead of plain text.
+Use `tmux` to manage persistent terminal sessions — especially useful for SSH work!
+Make small, incremental infrastructure changes and test each one.
+Keep production and staging environments as identical as possible.
+Automate security updates using unattended-upgrades (Ubuntu) or dnf-automatic (Fedora/RHEL).
+Always tag releases in Git with semantic versioning: `git tag -a v1.0.0 -m "Release v1.0.0"`.
+Use `docker-compose logs -f` to follow logs from multiple services at once.
+Monitor disk usage on servers with `du -sh * | sort -h`.
+Use pre-commit hooks to enforce code quality before code is pushed.
+Use `terraform fmt` and `terraform validate` before applying your code.
+Keep your CI/CD pipeline fast by running only necessary tests per stage.
+Use `kubectl describe pod <pod-name>` to troubleshoot issues in a pod.
+Add health checks to Docker containers to ensure services are running.
+Use Infrastructure as Code to document your infra — treat your infra like software.
+Create alerts for important logs using tools like Loki + Grafana or ELK stack.
+Back up your `~/.ssh` directory and `.bashrc/.zshrc` configs with version control.
+Use `git reflog` to recover lost commits after a bad reset or rebase.
+Use `tldr <command>` for quick command summaries instead of reading full man pages.
+Enable multi-factor authentication (MFA) on all your cloud provider accounts — security first!
+Use `htop` instead of `top` for a better visual on process management.
+Add `--dry-run` to destructive commands (e.g. `kubectl delete`, `terraform apply`) to preview the impact.
+Leverage `shellcheck` to catch issues in your Bash scripts early.
+Use `ansible --check` mode to test playbooks without making changes.
+Tag all cloud resources with environment info (e.g., Name, Owner, Project, Env=prod) for better traceability.
+Monitor cron jobs using `cronitor`, `healthchecks.io`, or simple webhook pings.
+Always pin exact Docker image versions (`nginx:1.25.2` not `nginx:latest`) for consistent deployments.
+Practice disaster recovery: simulate restoring from backup regularly.
+Use `git bisect` to find the commit that introduced a bug.
+Use `ncdu` to visually explore disk usage on remote systems.
+Rotate logs with `logrotate` to prevent disks from filling up.
+Add pre-deployment smoke tests to your CI/CD pipeline for early failure detection.
+Use `.dockerignore` to speed up image builds and reduce bloat.
+Monitor your CI runner health — they're infra too!
+Automate cost reporting with tools like `infracost` or `AWS Cost Explorer` scripts.
+Use `minikube tunnel` to expose services locally while testing.
+Always lint your Kubernetes manifests with `kubeval` or `kube-linter`.
+Use `jq` to parse JSON output from AWS CLI or other APIs like a pro.
+Add monitoring early with Prometheus + Grafana or CloudWatch — visibility is everything.
+Use GitHub Actions matrix builds to test multiple environments in parallel.
+Use `traceroute`, `mtr`, or `ip route` to debug complex network paths and latency issues.
+Use multi-stage builds in Dockerfiles to keep final images lean and secure.
+Experiment with chaos engineering using pumba or chaos-mesh in staging environments.
+Use k9s for a terminal-based Kubernetes dashboard — fast and intuitive.
+Automate rollbacks using health checks and observability tools for faster recovery.
+Set TTL tags on temporary cloud resources to prevent waste and reduce cloud clutter.
+Use `aws configure --profile <name>` to keep multiple AWS accounts and roles organized.
+Add GitHub CODEOWNERS files to automate reviewer assignments and ownership clarity.
+Use `skaffold` for rapid Kubernetes dev loops — build, push, deploy with one command.
+Use `direnv` to auto-load `.envrc` files with per-project environment variables safely.
+Visualize Terraform changes with `terraform show -json plan.tfplan | terraform-visual`.
+Automatically expire temporary IAM credentials using `aws-vault` or `leapp`.
+Prevent misconfigurations with `tfsec`, `checkov`, and `kics` in your IaC pipelines.
+Use `docker scan` or `trivy` to check containers for vulnerabilities before pushing.
+Avoid IAM spaghetti: break your AWS permissions into least-privilege policies by service.
+Schedule downtime-aware alerts in Grafana using annotations + alert rules.
+Use `act` to run GitHub Actions locally and debug workflows faster.
+Enable `kubectl get events --sort-by=.metadata.creationTimestamp` to watch real-time issues.
+Set up `pre-commit` hooks with `black`, `flake8`, or `yamllint` for clean, auto-formatted commits.
+Track pipeline drift with `Atlantis` or `Spacelift` to manage Terraform in PRs.
+Use `goss` or `testinfra` for quick server/infrastructure validation tests.
+Use container healthchecks (`HEALTHCHECK` in Dockerfile) for auto-restarts on failure.
+Watch for secrets in Git history with tools like `gitleaks` or `git-secrets`.
+Run `ss -tulpn` instead of `netstat` to get fast and readable listening port info.
+Add `metadata.labels.owner` in Kubernetes YAML to track service ownership clearly.
+Use `nmap -sV` to test exposed services and versions in staging before production.
+Use Nginx as a reverse proxy with HTTPS via Let’s Encrypt to secure services
