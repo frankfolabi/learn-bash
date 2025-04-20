@@ -4,9 +4,9 @@ This bash script customizes the terminal to display DevOps and Inspirational tip
 
 ## Overview
 
-![screenshot-1](./screenshots/screenshot1)
-![screenshot-2](./screenshots/screenshot2)
-![screenshot-3](./screenshots/screenshot3)
+![screenshot-1](./screenshots/screenshot1.png)
+![screenshot-2](./screenshots/screenshot2.png)
+![screenshot-3](./screenshots/screenshot3.png)
 
 ## Instruction
 
