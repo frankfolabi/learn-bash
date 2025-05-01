@@ -12,11 +12,11 @@ This bash script customizes the terminal to display DevOps and Inspirational tip
 
 To install this on your terminal, run the following commands:
 
-`git clone https://github.com/frankfolabi/learn-bash.git` 
-
-`cd learn-bash/inspire-terminal`
-
-`bash install.sh`
+```
+git clone https://github.com/frankfolabi/learn-bash.git
+cd learn-bash/inspire-terminal 
+bash install.sh 
+```
 
 You can now enjoy your terminal with DevOps tips and Inspirational quotes.
 
@@ -24,7 +24,7 @@ You can now enjoy your terminal with DevOps tips and Inspirational quotes.
 
 ## Uninstallation
 
-Navigate to the `inspire-terminal` directory and execute the uninstall script.
+Navigate to the inspire-terminal directory and run:
 
-`bash uninstall.sh`
+<pre>bash uninstall.sh</pre>
 
