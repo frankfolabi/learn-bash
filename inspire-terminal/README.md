@@ -1,6 +1,6 @@
 # Devops Inspirational Terminal
 
-This bash script customizes the terminal to display DevOps and Inspirational tips to reinforce learning and keep going. Currently, there are about 250 tips and 2 would be randomly displayed on each launch of the terminal. More tips would be added in due course.
+This bash script customizes the terminal to display DevOps and Inspirational tips to reinforce learning and keep going. Currently, there are about 250 tips and 2 would be randomly displayed when a new terminal session is launched. More tips would be added in due course.
 
 ## Overview
 
@@ -8,19 +8,23 @@ This bash script customizes the terminal to display DevOps and Inspirational tip
 ![screenshot-2](./screenshots/screenshot-2.png)
 ![screenshot-3](./screenshots/screenshot-3.png)
 
-## Instruction
+## Installation
 
-To install this on your terminal, run the following commands.
+To install this on your terminal, run the following commands:
 
 `git clone https://github.com/frankfolabi/learn-bash.git` 
 
-Move to the inspire terminal directory
-
 `cd learn-bash/inspire-terminal`
 
-Execute the script
+`bash install.sh`
 
-`bash setup.sh`
+You can now enjoy your terminal with DevOps tips and Inspirational quotes.
 
-You can now enjoy your terminal with DevOps tips and quotes.
----
+
+
+## Uninstallation
+
+Navigate to the `inspire-terminal` directory and execute the uninstall script.
+
+`bash uninstall.sh`
+
