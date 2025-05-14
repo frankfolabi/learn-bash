@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Inspire Terminal is a script to randonly display Inspiration and Devops tips on the terminal
+# The tips are shown each time the terminal is launched.
+
+
 # Create tips directory and copy files
 mkdir -p "$HOME/.tips"
 cp ./*_tips "$HOME/.tips"

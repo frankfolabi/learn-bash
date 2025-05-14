@@ -96,4 +96,6 @@ Watch for secrets in Git history with tools like `gitleaks` or `git-secrets`.
 Run `ss -tulpn` instead of `netstat` to get fast and readable listening port info.
 Add `metadata.labels.owner` in Kubernetes YAML to track service ownership clearly.
 Use `nmap -sV` to test exposed services and versions in staging before production.
-Use Nginx as a reverse proxy with HTTPS via Let’s Encrypt to secure services
+Use Nginx as a reverse proxy with HTTPS via Let’s Encrypt to secure services.
+Production containers should almost always be run in the context of an unprivileged user.
+
